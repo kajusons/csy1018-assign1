@@ -110,9 +110,9 @@ ul {
     width: 20%;
   }
 
-.tabs {
+  .tabs {
   display: flex;
   flex-direction: row;
-}
+  }
 
 }

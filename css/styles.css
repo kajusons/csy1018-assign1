@@ -86,6 +86,7 @@ ul {
 /* if viewport is smaller then 30em */
 @media (max-width: 30em) {
   .main {
+    display: flex;
     flex: 1 0 auto;
   }
 }
@@ -93,7 +94,7 @@ ul {
 /* if viewport is bigger than 30em */
 @media (min-width: 30em) {
   .nav {
-    display: block;
+    display: flex;
     flex-direction: column;
   }
 
@@ -104,6 +105,14 @@ ul {
     flex: 1 0 auto;
   }
   .aside {
+    display: flex;
+    flex-direction: column;
     width: 20%;
   }
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+
 }

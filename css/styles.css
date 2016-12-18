@@ -35,6 +35,7 @@ body {
 .main {
   padding: 1em;
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .aside {
@@ -44,6 +45,8 @@ body {
 
 .header {
   padding: 1em;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 50px;
 }
 
 ul {
@@ -56,26 +59,43 @@ ul {
 
 .home {
   padding: 10px;
+  padding-right: 10px;
   border: 3px solid grey;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.home:hover {
+  background-color: #DEA460;
 }
 
 .bio {
   padding: 10px;
   border: 3px solid grey;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.bio:hover {
+  background-color: #DEA460;
 }
 
 .cv {
   padding: 10px;
   border: 3px solid grey;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.cv:hover {
+  background-color: #DEA460;
 }
 
 .contact {
   padding: 10px;
   border: 3px solid grey;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.contact:hover {
+  background-color: #DEA460;
 }
 
 .kajuimg {
@@ -84,6 +104,19 @@ ul {
   border: 1px solid grey;
 }
 
+.tabs {
+  display: inline-table;
+  text-align: center;
+  align-items: center;
+}
+
+.paragraph {
+  font-size: 1.5em;
+}
+
+.h3 {
+  font-family: 'Titillium Web', sans-serif;
+}
 
 /* if viewport is smaller then 30em */
 @media (max-width: 30em) {
@@ -96,9 +129,11 @@ ul {
 /* if viewport is bigger than 30em */
 @media (min-width: 30em) and (max-width: 100em) {
   .nav {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-right: -100%;
   }
 
   .wrapper {
@@ -117,5 +152,9 @@ ul {
   display: flex;
   flex-direction: row;
   }
+
+.header {
+  padding-bottom: 10px;
+}
 
 }

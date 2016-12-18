@@ -52,26 +52,43 @@ body {
 
 .home {
   padding: 10px;
-  border: 3px solid darkgrey;
-  border-radius: 20px;
+  padding-right: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.home:hover {
+  background-color: #DEA460;
 }
 
 .bio {
   padding: 10px;
-  border: 3px solid darkgrey;
-  border-radius: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.bio:hover {
+  background-color: #DEA460;
 }
 
 .cv {
   padding: 10px;
-  border: 3px solid darkgrey;
-  border-radius: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.cv:hover {
+  background-color: #DEA460;
 }
 
 .contact {
   padding: 10px;
-  border: 3px solid darkgrey;
-  border-radius: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.contact:hover {
+  background-color: #DEA460;
 }
 
 .form {
@@ -80,6 +97,17 @@ body {
   width: 40%;
   min-width: 15em;
   max-width: 26.5em;
+}
+
+.header {
+    padding: 1em;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 42px;
+}
+
+.p {
+  font-size: 10em;
+  font-family: 'Actor', sans-serif;
 }
 
 @media (max-width: 30em) {

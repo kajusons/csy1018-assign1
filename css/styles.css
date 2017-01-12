@@ -15,6 +15,13 @@ body {
   background-position: center;
 }
 
+.html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .nav {
   order: -1;
   padding: 10px;
@@ -23,7 +30,8 @@ body {
 .footer {
   padding: 1em;
   text-align: center;
-  font-size: 16px;
+  font-size: 0.7em;
+  background-color: #2E4360;
 }
 
 .wrapper {
@@ -34,6 +42,7 @@ body {
 
 .main {
   padding: 1em;
+  padding-right: 2em;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -41,12 +50,15 @@ body {
 .aside {
   padding: 1em;
   text-align: center;
+  margin: 0 auto;
+  width: 100px;
 }
 
 .header {
   padding: 1.5em;
   font-family: 'Cuprum', sans-serif;
-  font-size: 50px;
+  font-size: 2em;
+  padding-bottom: 0px;
 }
 
 ul {
@@ -67,7 +79,7 @@ ul {
 }
 
 .home:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .bio {
@@ -79,7 +91,7 @@ ul {
 }
 
 .bio:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .cv {
@@ -91,7 +103,7 @@ ul {
 }
 
 .cv:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .contact {
@@ -103,7 +115,7 @@ ul {
 }
 
 .contact:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .kajuimg {
@@ -113,20 +125,60 @@ ul {
 }
 
 .tabs {
+  position: relative;
   display: inline-table;
   text-align: center;
   align-items: center;
-
   width: 100%;
   color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.introtext {
+
 }
 
 .paragraph {
   font-size: 1.5em;
+  text-align: justify;
 }
 
 .h3 {
+  font-size: 1em;
+  text-align: justify;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.h4 {
+  font-size:
+  text-align: justify;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.p {
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.fa-github {
+  list-style-type: none;
+  color: black;
+}
+
+.fa-github:hover {
+  background-color: #407DCF;
+}
+
+.fa-codepen {
+  list-style-type: none;
+  color: black;
+}
+
+.fa-codepen:hover {
+  background-color: #407DCF;
 }
 
 /* if viewport is smaller then 30em */
@@ -134,11 +186,38 @@ ul {
   .main {
     display: flex;
     flex: 1 0 auto;
+    justify-content: center;
+    justify-content: space-around;
   }
+
+  .tabs {
+  display: block;
+  justify-content: space-between;
+  }
+
+  .header {
+  font-size: 1.375em;
+  line-height: 1;
+  }
+
+  .h3 {
+    text-align: justify;
+  }
+
+  .h4 {
+    text-align: justify;
+  }
+
+  .p {
+    text-align: justify;
+    font-size: 10em;
+    font-family: 'Actor', sans-serif;
+  }
+
 }
 
 /* if viewport is bigger than 30em */
-@media (min-width: 30em) and (max-width: 100em) {
+@media (min-width: 40em) {
   .nav {
     padding: 10px;
     display: flex;
@@ -152,6 +231,8 @@ ul {
   }
   .main {
     flex: 1 0 auto;
+    justify-content: center;
+    justify-content: space-around;
   }
   .aside {
     display: flex;
@@ -159,13 +240,10 @@ ul {
     width: 20%;
   }
 
-  .tabs {
-  display: flex;
-  flex-direction: row;
+  .header {
+  padding: 10px;
   }
 
-.header {
-  padding: 10px;
-}
+
 
 }

@@ -11,26 +11,33 @@
   </head>
   <body>
 
-    <div class="wrapper"> <!-- a container for main and aside -->
+    <div class="wrapper"> <!-- a wrapper for main and aside -->
       <main class="main">
-        .main
+        Please enter your details,
+        the boxes marked with an * must be filled in.
 
     <form class="form" action="index.html" method="post">
-          <!-- Text Input -->
+          <!-- Text Input: First Name -->
     <div class="form-group">
-      <label for="form-input">First Name</label>
+      <label for="form-input">First Name*</label>
       <input type="text" id="form-input1">
     </div>
 
-      <!-- Text Input -->
+      <!-- Text Input: Surname -->
     <div class="form-group">
-      <label for="form-input">Surname</label>
+      <label for="form-input">Surname*</label>
       <input type="text" id="form-input2">
     </div>
 
-    <!-- Text Area -->
+    <!-- Text Input: Email -->
+  <div class="form-group">
+    <label for="form-input">Email*</label>
+    <input type="text" id="form-input3">
+  </div>
+
+    <!-- Text Area: Message -->
     <div class="form-group">
-      <label for="form-textarea">Message</label>
+      <label for="form-textarea">Message*</label>
       <textarea rows="4" cols="25" id="form-textarea"></textarea>
     </div>
 
@@ -40,13 +47,17 @@
     </form>
       </main>
       <aside class="aside">
-        .aside
+        My Personal Contact Details:
+        <li>Email: blahblahblah@blahblahblah.com</li>
       </aside>
-    </div> <!-- end of wrapper -->
+    </div> <!-- end of wrapper for main and aside -->
 
+    <!-- title -->
     <nav class="nav">
       <header class="header">Personal Portfolio</header>
       Kajuson Sivathayalan
+
+      <!-- tabs -->
       <ul class="tabs">
         <a href="index.html" style="text-decoration:none"><li class="home"><i class="fa fa-home" aria-hidden="true"></i>Home</li></a>
         <span style="display:inline-block; width: 30px;"></span>
@@ -59,6 +70,10 @@
       </ul>
     </nav>
 
-    <footer class="footer">.footer</footer>
+    <!-- footer -->
+    <footer class="footer">Also Find Me On:
+  <i class="fa fa-facebook-official fa-1g" aria-hidden="true"><i class="fa fa-twitter" aria-hidden="true"></i>
+</i></footer>
+
   </body>
 </html>

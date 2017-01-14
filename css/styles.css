@@ -137,10 +137,6 @@ ul {
   justify-content: space-around;
 }
 
-.introtext {
-
-}
-
 .paragraph {
   font-size: 1.5em;
   text-align: justify;
@@ -186,6 +182,7 @@ ul {
   .main {
     display: flex;
     flex: 1 0 auto;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-around;
   }
@@ -193,6 +190,11 @@ ul {
   .tabs {
   display: block;
   justify-content: space-between;
+  border-radius: 1px;
+  border-width: inherit;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-bottom: 0em;
   }
 
   .header {
@@ -244,6 +246,11 @@ ul {
   padding: 10px;
   }
 
-
-
 }
+
+/* Code Sources
+* CodePen - Liz Coulter Smith: https://codepen.io/lizcoultersmith/pens/public/
+* CodePen - Tom Rose: http://codepen.io/UoN-ThomasRose/pens/public/
+* CodePen - http://codepen.io/
+* W3 School - shttp://www.w3schools.com/
+/* Sources

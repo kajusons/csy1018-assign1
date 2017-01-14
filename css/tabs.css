@@ -12,14 +12,15 @@ body {
 
 .nav {
   order: -1;
-  padding: 1em;
+  padding: 10px;
   background-image: url(../img/image3.jpg);
 }
 
 .footer {
   padding: 1em;
   text-align: center;
-  background-image: url(../img/image3.jpg);
+  font-size: 0.7em;
+  background-color: #E2E8F1;
 }
 
 .wrapper {
@@ -34,13 +35,18 @@ body {
   font-size: 20px;
   text-align: left;
   list-style-type: none;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 0.8em;
 }
 
 .aside {
   padding: 1em;
   text-align: center;
   background: rgb(224, 220, 199);
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 0.8em;
 }
+
 
 .tabs {
   position: relative;
@@ -66,7 +72,7 @@ body {
 }
 
 .home:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .bio {
@@ -78,7 +84,7 @@ body {
 }
 
 .bio:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .bio:active {
@@ -95,7 +101,7 @@ body {
 }
 
 .cv:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .contact {
@@ -107,7 +113,7 @@ body {
 }
 
 .contact:hover {
-  background-color: #DEA460;
+  background-color: #85B7FA;
 }
 
 .form {
@@ -133,9 +139,15 @@ body {
 
 .cvinfo {
   padding: 10px;
-  border: 3px solid black;
+  border: 3px solid grey;
   border-radius: 10px;
   font-size: 1em;
+  font-family: 'Signika Negative', sans-serif;
+  text-align: left;
+}
+
+.school {
+  list-style-type: none;
 }
 
 .ol {
@@ -143,20 +155,67 @@ body {
 }
 
 .kajuimg {
-  height: 6em;
-  width: 7em;
+  height: 7em;
+  width: 6.5em;
   border: 1px solid grey;
 }
 
-@media (max-width: 56.25em) {
+.fa-github {
+  list-style-type: none;
+  color: black;
+}
+
+.fa-github:hover {
+  background-color: #407DCF;
+}
+
+.fa-codepen {
+  list-style-type: none;
+  color: black;
+}
+
+.fa-codepen:hover {
+  background-color: #407DCF;
+}
+
+p {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.modules {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+@media (max-width: 30em) {
   .main {
     flex: 1 0 auto;
   }
+
+  .tabs {
+  display: block;
+  justify-content: space-between;
+  border-radius: 1px;
+  border-width: inherit;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  }
+
+  .header {
+  font-size: 1.375em;
+  line-height: 1;
+  padding: 10px;
+  }
+
 }
 
 @media (min-width: 37.5em) {
   .nav {
     display: block;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: -100%;
   }
   .wrapper {
     flex-direction: row;
@@ -171,3 +230,11 @@ body {
     font-size: 20px;
   }
 }
+
+
+/* Code Sources
+* CodePen - Liz Coulter Smith: https://codepen.io/lizcoultersmith/pens/public/
+* CodePen - Tom Rose: http://codepen.io/UoN-ThomasRose/pens/public/
+* CodePen - http://codepen.io/
+* W3 School - shttp://www.w3schools.com/
+/* Sources

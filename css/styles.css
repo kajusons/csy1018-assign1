@@ -218,7 +218,7 @@ ul {
 
 }
 
-/* if viewport is bigger than 30em */
+/* if viewport is bigger than 40em */
 @media (min-width: 40em) {
   .nav {
     padding: 10px;

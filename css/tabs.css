@@ -132,6 +132,10 @@ body {
   padding-bottom: 0px;
 }
 
+.h3 {
+  font-family: 'Actor', sans-serif;
+}
+
 .p {
   font-size: 10em;
   font-family: 'Actor', sans-serif;
@@ -186,6 +190,7 @@ p {
   font-family: 'Signika Negative', sans-serif;
 }
 
+/* if viewport is smaller then 30em */
 @media (max-width: 30em) {
   .main {
     flex: 1 0 auto;
@@ -208,6 +213,7 @@ p {
 
 }
 
+/* if viewport is bigger then 37.5em */
 @media (min-width: 37.5em) {
   .nav {
     display: block;
